@@ -1,0 +1,5 @@
+usethis::use_roxygen_md()
+usethis::use_readme_rmd()
+usethis::use_testthat()
+usethis::use_travis()
+usethis::use_appveyor()
