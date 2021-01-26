@@ -29,3 +29,11 @@ usethis::use_appveyor()
 #                                     pop_edu, senkou, smoke, pop_alc, pop_ken, myoji, height2, bmi2, haigu,
 #                                     internal = TRUE, overwrite = TRUE)
 
+# library(devtools)
+# library(roxygen2)
+# library(testthat)
+# library(tidyverse)
+
+
+
+# library(rlang)
