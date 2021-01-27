@@ -13,5 +13,5 @@ syn2(V, n)
 character
 }
 \description{
-
+hoge
 }
