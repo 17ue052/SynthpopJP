@@ -9,13 +9,13 @@
 #'@importFrom rlang .data
 #'@export
 mkdata <- function(n){
-  z <- stats::rmultinom(n, 1, pop$V1)
+  z <- stats::rmultinom(n, 1, pop[-1, 4])
   z <- t(z)
   as.data.frame(z) -> z
   z %>% dplyr::mutate(id = dplyr::row_number()) -> z
-  age_range <- 15:109
+  age_range <- 15:100
   colnames(z) <- c(as.character(age_range), "id")
-  z %>% tidyr::pivot_longer(-.data$`id`, names_to = "年齢", values_to = "value") %>%
+  z %>% tidyr::pivot_longer(!.data$id, names_to = "年齢", values_to = "value") %>%
     dplyr::filter(.data$value == 1) %>%
     dplyr::select(.data$`年齢`) -> z
   as.data.frame(z) %>%
