@@ -4,6 +4,7 @@ usethis::use_testthat()
 usethis::use_travis()
 usethis::use_appveyor()
 
+
 # read.csv("onna_namae.csv") -> onna_namae
 # read.csv("otoko_namae.csv") -> otoko_namae
 # read.csv("myoji.csv") -> myoji

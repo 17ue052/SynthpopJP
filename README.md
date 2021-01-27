@@ -5,10 +5,6 @@
 
 <!-- badges: start -->
 
-[![Travis build
-status](https://travis-ci.com/17ue052/synthpopJP.svg?branch=master)](https://travis-ci.com/17ue052/synthpopJP)
-[![AppVeyor build
-status](https://ci.appveyor.com/api/projects/status/github/17ue052/synthpopJP?branch=master&svg=true)](https://ci.appveyor.com/project/17ue052/synthpopJP)
 <!-- badges: end -->
 
 The goal of synthpopJP is to …
