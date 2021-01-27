@@ -37,7 +37,7 @@ And the development version from [GitHub](https://github.com/) with:
 
 ``` r
 # install.packages("devtools")
-devtools::install_github("nonki1974/synthpopJP")
+devtools::install_github("17ue052/synthpopJP")
 ```
 ## Example
 

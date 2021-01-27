@@ -5,6 +5,13 @@
 
 <!-- badges: start -->
 
+# \<\<\<\<\<\<\< HEAD
+
+[![Travis build
+status](https://travis-ci.com/nonki1974/test0127.svg?branch=main)](https://travis-ci.com/nonki1974/test0127)
+[![AppVeyor build
+status](https://ci.appveyor.com/api/projects/status/github/nonki1974/test0127?branch=main&svg=true)](https://ci.appveyor.com/project/nonki1974/test0127)
+\>\>\>\>\>\>\> 4964e3acee39e7295e5acfc7fdb87ee71bd8e774
 <!-- badges: end -->
 
 The goal of synthpopJP is to …
@@ -22,7 +29,7 @@ And the development version from [GitHub](https://github.com/) with:
 
 ``` r
 # install.packages("devtools")
-devtools::install_github("nonki1974/synthpopJP")
+devtools::install_github("17ue052/synthpopJP")
 ```
 
 ## Example
@@ -30,7 +37,6 @@ devtools::install_github("nonki1974/synthpopJP")
 This is a basic example which shows you how to solve a common problem:
 
 ``` r
-library(synthpopJP)
 ## basic example code
 ```
 
