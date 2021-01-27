@@ -15,14 +15,14 @@ gen_category <- function(V1, ref, V1_vname){
   V1_vname <- rlang::sym(V1_vname)
 
   ref %>%
-    filter(!!(V1_vname) == V1) %>%
-    select(-!!(V1_vname)) %>%
+    dplyr::filter(!!(V1_vname) == V1) %>%
+    dplyr::select(-!!(V1_vname)) %>%
     t() %>% as.vector() -> rate
 
   ref %>%
-    select(-!!(V1_vname)) %>%
+    dplyr::select(-!!(V1_vname)) %>%
     colnames() -> cate
 
-  cate[which(as.logical(as.vector(rmultinom(1, 1, rate))))]
+  cate[which(as.logical(as.vector(stats::rmultinom(1, 1, rate))))]
 
 }

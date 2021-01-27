@@ -4,14 +4,14 @@
 #'@param n
 #'
 #'@return character
-#'@description
+#'@description hoge
 #'
 #'@export
 syn2 <- function(V,n){
   JPdata %>%
-    select(V) -> JPdata2
+    dplyr::select(V) -> JPdata2
 
-  syn(data = JPdata2, k=n) -> synJP_list
+  synthpop::syn(data = JPdata2, k=n) -> synJP_list
   synJP_list$syn -> synJP_df
 
   return(synJP_df)

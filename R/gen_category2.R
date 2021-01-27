@@ -16,17 +16,17 @@ gen_category2 <- function(V1, V2, ref, V1_vname, V2_vname){
   V2_vname <- rlang::sym(V2_vname)
 
   ref %>%
-    filter(!!(V1_vname) == V1) %>%
-    filter(!!(V2_vname) == V2) %>%
-    select(-!!(V2_vname)) %>%
-    select(-!!(V1_vname)) %>%
+    dplyr::filter(!!(V1_vname) == V1) %>%
+    dplyr::filter(!!(V2_vname) == V2) %>%
+    dplyr::select(-!!(V2_vname)) %>%
+    dplyr::select(-!!(V1_vname)) %>%
     t() %>% as.vector() -> rate
 
   ref %>%
-    select(-!!(V2_vname)) %>%
-    select(-!!(V1_vname)) %>%
+    dplyr::select(-!!(V2_vname)) %>%
+    dplyr::select(-!!(V1_vname)) %>%
     colnames() -> cate
 
-  cate[which(as.logical(as.vector(rmultinom(1, 1, rate))))]
+  cate[which(as.logical(as.vector(stats::rmultinom(1, 1, rate))))]
 
 }
