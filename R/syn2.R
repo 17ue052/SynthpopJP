@@ -17,7 +17,14 @@ syn2 <- function(V,n){
   pM.cor[,c("性別","年齢")] <- 1
   synthpop::syn(data = JPdata2, k=n,predictor.matrix = pM.cor) -> synJP_list2
   synJP_list2$syn -> synJP_df
+  colnames(synJP_df) -> JPcol
+  JPdata <- if(("bmi" %in% JPcol)&&("体重" %in% JPcol)&&("身長" %in% JPcol)){
+    synJP_df %>%
+      mutate(bmi = round(((体重*100/身長)*100/身長), digits = 1))
+  }else{
+    synJP_df
+  }
 
-  return(synJP_df)
+  return(JPdata)
 }
 

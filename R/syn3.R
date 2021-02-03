@@ -23,7 +23,14 @@ syn3 <- function(V,n){
     dplyr::mutate(`名` = dplyr::if_else(`性別` == "男", `男名`, `女名`)) %>%
     dplyr::mutate(`メイ` = dplyr::if_else(`性別` == "男", `男メイ`, `女メイ`)) %>%
     dplyr::select(-c(`女名`,`男名`,`女メイ`,`男メイ`)) -> synJP_df
+  colnames(synJP_df) -> JPcol
+  JPdata <- if(("bmi" %in% JPcol)&&("体重" %in% JPcol)&&("身長" %in% JPcol)){
+    synJP_df %>%
+      mutate(bmi = round(((体重*100/身長)*100/身長), digits = 1))
+  }else{
+    synJP_df
+  }
 
-  return(synJP_df)
+  return(JPdata)
 }
 
