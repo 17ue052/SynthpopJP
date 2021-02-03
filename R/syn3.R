@@ -9,9 +9,9 @@
 #'@export
 syn3 <- function(V,n){
   JPdata %>%
-    dplyr::select(V) -> JPdata2
+    dplyr::select(c("性別","年齢",V)) -> JPdata2
 
-  synthpop::syn(data = JPdata2, k=n) -> synJP_list
+  synthpop::syn(data = JPdata2, k=n, visit.sequence = c("性別","年齢")) -> synJP_list
   synJP_list$syn %>%
     dplyr::mutate(dplyr::sample_n(myoji, n)) %>%
     dplyr::mutate(dplyr::sample_n(onna_namae, n)) %>%
