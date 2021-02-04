@@ -20,7 +20,7 @@ syn2 <- function(V,n){
   colnames(synJP_df) -> JPcol
   JPdata <- if(("bmi" %in% JPcol)&&("体重" %in% JPcol)&&("身長" %in% JPcol)){
     synJP_df %>%
-      mutate(bmi = round(((体重*100/身長)*100/身長), digits = 1))
+      mutate(bmi = round(((`体重`*100/`身長`)*100/`身長`), digits = 1))
   }else{
     synJP_df
   }

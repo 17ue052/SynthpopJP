@@ -21,12 +21,12 @@ syn3 <- function(V,n){
     dplyr::mutate(dplyr::sample_n(onna_namae, n)) %>%
     dplyr::mutate(dplyr::sample_n(otoko_namae, n)) %>%
     dplyr::mutate(`名` = dplyr::if_else(`性別` == "男", `男名`, `女名`)) %>%
-    dplyr::mutate(`メイ` = dplyr::if_else(`性別` == "男", `男メイ`, `女メイ`)) %>%
-    dplyr::select(-c(`女名`,`男名`,`女メイ`,`男メイ`)) -> synJP_df
+    dplyr::mutate(`めい` = dplyr::if_else(`性別` == "男", `男めい`, `女めい`)) %>%
+    dplyr::select(-c(`女名`,`男名`,`女めい`,`男めい`)) -> synJP_df
   colnames(synJP_df) -> JPcol
   JPdata <- if(("bmi" %in% JPcol)&&("体重" %in% JPcol)&&("身長" %in% JPcol)){
     synJP_df %>%
-      mutate(bmi = round(((体重*100/身長)*100/身長), digits = 1))
+      mutate(bmi = round(((`体重`*100/`身長`)*100/`身長`), digits = 1))
   }else{
     synJP_df
   }
