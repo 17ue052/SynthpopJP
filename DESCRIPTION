@@ -19,7 +19,9 @@ Imports:
     roxygen2,
     magrittr,
     tidyr,
-    rlang
+    rlang,
+    shiny,
+    shinythemes
 Depends: 
     R (>= 2.10)
 Suggests: 
