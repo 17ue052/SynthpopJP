@@ -7,7 +7,7 @@
 mkdata(n)
 }
 \arguments{
-\item{n}{}
+\item{n}{number of records}
 }
 \value{
 dataframe

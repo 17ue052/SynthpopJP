@@ -1,10 +1,11 @@
 #'return the data
 #'
-#'@param n
+#'@param n number of records
 #'
 #'
 #'@return dataframe
 #'@description
+#'
 #'
 #'@export
 mkdata <- function(n){
