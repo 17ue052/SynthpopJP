@@ -7,7 +7,11 @@
 synJP(V, n, name = FALSE)
 }
 \arguments{
-\item{n}{}
+\item{V}{variebles' name}
+
+\item{n}{number of records}
+
+\item{name}{make name's data or not}
 }
 \value{
 character
