@@ -2,20 +2,20 @@
 % Please edit documentation in R/synJP.R
 \name{synJP}
 \alias{synJP}
-\title{JPdata→synthpop→JPdata2(no name)}
+\title{Generate synthsetic data from samples based on Japanese statistics}
 \usage{
 synJP(V, n, name = FALSE)
 }
 \arguments{
-\item{V}{variebles' name}
+\item{V}{the name of variebles generate}
 
 \item{n}{number of records}
 
-\item{name}{make name's data or not}
+\item{name}{logical value with generating name's data}
 }
 \value{
 character
 }
 \description{
-hoge
+Generate synthsetic data from samples based on Japanese statistics
 }

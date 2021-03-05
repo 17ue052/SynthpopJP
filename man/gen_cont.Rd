@@ -2,16 +2,24 @@
 % Please edit documentation in R/gen_cont.R
 \name{gen_cont}
 \alias{gen_cont}
-\title{return one of the data}
+\title{Generate continuous variables based on two variables with mean and standard discrimination}
 \usage{
 gen_cont(V1, V2, ref, V1_vname, V2_vname)
 }
 \arguments{
-\item{V2_vname}{}
+\item{V1}{first original variable of data to reference}
+
+\item{V2}{second original variable of data to reference}
+
+\item{ref}{reference data name}
+
+\item{V1_vname}{first reference variable}
+
+\item{V2_vname}{second reference variable}
 }
 \value{
-character
+numeric
 }
 \description{
-
+Generate continuous variables based on two variables with mean and standard discrimination
 }

@@ -2,7 +2,7 @@
 % Please edit documentation in R/mkdata.R
 \name{mkdata}
 \alias{mkdata}
-\title{return the data}
+\title{Return the data of gender and age based on the ratio of the population of Japan}
 \usage{
 mkdata(n)
 }
@@ -13,5 +13,5 @@ mkdata(n)
 dataframe
 }
 \description{
-mk
+Return the data of gender and age based on the ratio of the population of Japan
 }

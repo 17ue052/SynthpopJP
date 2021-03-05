@@ -2,16 +2,20 @@
 % Please edit documentation in R/gen_category.R
 \name{gen_category}
 \alias{gen_category}
-\title{return one of the data}
+\title{Generate category variables based on one variable}
 \usage{
 gen_category(V1, ref, V1_vname)
 }
 \arguments{
-\item{V1_vname}{}
+\item{V1}{the original variable of data to reference}
+
+\item{ref}{reference data name}
+
+\item{V1_vname}{the reference variable}
 }
 \value{
 character
 }
 \description{
-
+Generate category variables based on one variable
 }

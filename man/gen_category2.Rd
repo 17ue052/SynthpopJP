@@ -2,12 +2,20 @@
 % Please edit documentation in R/gen_category2.R
 \name{gen_category2}
 \alias{gen_category2}
-\title{return one of the data}
+\title{Generate category variables based on two variables}
 \usage{
 gen_category2(V1, V2, ref, V1_vname, V2_vname)
 }
 \arguments{
-\item{V2_vname}{}
+\item{V1}{first original variable of data to reference}
+
+\item{V2}{second original variable of data to reference}
+
+\item{ref}{reference data name}
+
+\item{V1_vname}{first reference variable}
+
+\item{V2_vname}{second reference variable}
 }
 \value{
 character
