@@ -1,13 +1,13 @@
-#'return one of the data
+#'Generate continuous variables based on two variables with mean and standard discrimination
 #'
-#'@param V1
-#'@param V2
-#'@param ref
-#'@param V1_vname
-#'@param V2_vname
+#'@param V1 first original variable of data to reference
+#'@param V2 second original variable of data to reference
+#'@param ref reference data name
+#'@param V1_vname first reference variable
+#'@param V2_vname second reference variable
 #'
-#'@return character
-#'@description
+#'@return numeric
+#'
 #'
 #'@export
 gen_cont <- function(V1,V2,ref,V1_vname,V2_vname){

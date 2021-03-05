@@ -1,13 +1,11 @@
-#'return one of the data
+#'Generate category variables based on one variable
 #'
-#'@param V1
-#'@param ref
-#'@param V1_vname
-#'
-#'
+#'@param V1 the original variable of data to reference
+#'@param ref reference data name
+#'@param V1_vname the reference variable
 #'
 #'@return character
-#'@description
+#'
 #'
 #'@export
 gen_category <- function(V1, ref, V1_vname){

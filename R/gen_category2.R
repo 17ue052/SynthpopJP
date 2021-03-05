@@ -1,10 +1,10 @@
-#'return one of the data
+#'Generate category variables based on two variables
 #'
-#'@param V1
-#'@param V2
-#'@param ref
-#'@param V1_vname
-#'@param V2_vname
+#'@param V1 first original variable of data to reference
+#'@param V2 second original variable of data to reference
+#'@param ref reference data name
+#'@param V1_vname first reference variable
+#'@param V2_vname second reference variable
 #'
 #'@return character
 #'@description

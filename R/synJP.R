@@ -1,11 +1,11 @@
-#'JPdata→synthpop→JPdata2(no name)
+#'Generate synthsetic data from samples based on Japanese statistics
 #'
-#'@param V variebles' name
+#'@param V the name of variebles generate
 #'@param n number of records
-#'@param name make name's data or not
+#'@param name logical value with generating name's data
 #'
 #'@return character
-#'@description hoge
+#'
 #'
 #'@export
 synJP <- function(V, n, name = FALSE) {

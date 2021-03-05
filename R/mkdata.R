@@ -1,11 +1,9 @@
-#'return the data
+#'Return the data of gender and age based on the ratio of the population of Japan
 #'
 #'@param n number of records
 #'
-#'
 #'@return dataframe
-#'@description
-#'mk
+#'
 #'
 #'@export
 mkdata <- function(n){
